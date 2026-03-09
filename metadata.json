@@ -1,0 +1,7 @@
+{
+  "name": "Remix: Kirayo - AI Rental Marketplace",
+  "description": "AI-powered rental marketplace for India with smart search and rent suggestions.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

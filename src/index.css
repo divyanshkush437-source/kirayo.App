@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-primary: #FF0000;
+  --color-primary-dark: #CC0000;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 font-sans;
+  }
+}
+
+@keyframes splash-fade {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes tagline-fade {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-splash {
+  animation: splash-fade 1s ease-out forwards;
+}
+
+.animate-tagline {
+  animation: tagline-fade 1s ease-out 0.8s forwards;
+  opacity: 0;
+}
